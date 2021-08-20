@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /* Header Starts */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     background-color: #1c1c1c;
     color: lightseagreen;
     margin: auto;
+    width: 100%;
 }
 header h1 {
     color: #1c1c1c;
@@ -22,14 +25,16 @@ header h1 {
     margin: 20px 0 ;
 
 }
+header nav {
+    background-color: #1c1c1c;
+}
 header nav ul{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    margin: 20px 100px 0 0;
     font-size: 24px;
-    padding: 0 50px 30px 0;
+    padding: 0 50px 0 0;
 }
 
 header nav ul li a {
@@ -37,8 +42,11 @@ header nav ul li a {
     text-decoration: none;
     border-bottom: 1px solid lightseagreen;
     margin: auto 20px auto 20px;
+    
 }
-
+body {
+    background-color: #dde6f0;
+}
 /* Hero starts */
 .hero {
     background-image: url("../images/150666-lines-background-1920x1200-for-phone.jpg");
@@ -55,29 +63,69 @@ header nav ul li a {
     margin-top: 10px;
     border: 1px solid lightseagreen;
 }
-article {
-    display: flex;
-    flex-direction: row;
-}
+
+/* Content Info Start */
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
 }
 .info content {
-    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     margin-top: 25px;
-    height: 400px;
-    
+    min-width: 20%;
+    max-width: 60%;
 }
 .info h2 {
+    display: flex;
     padding-right: 7px;
-    text-align: right;
     font-size: 32px;
+    border-right: 3px solid black;
 }
 .info p {
+    display: flex;
     padding-left: 40px;
-    border-left: 3px solid darkblue;
+    
+}
+.info img:hover {
+    opacity: 50%;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
 
+/* Work Image Section */
+
+.main-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../images/run-buddyimg.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 1024px;
+    margin-left: 40px;
+    border: 3px solid lightseagreen;
+
+}
+.main-image:hover {
+    opacity: 50%;
+}
+.main-image h3 {
+    display: flex;
+    background-color: lightseagreen;
+    width: 10%;
+}
+.main-image h4 {
+    display: flex;
+    background-color: lightseagreen;
+    width: 10%;
+    margin-bottom: 10px;
 }
