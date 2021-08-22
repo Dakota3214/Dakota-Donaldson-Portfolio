@@ -102,7 +102,8 @@ article {
 
 /* Work Image Section */
 
-.main-image:hover {
+
+.main-anchor:hover {
     opacity: 50%;
 }
 .main-image h3 {
@@ -118,6 +119,7 @@ article {
 }
 .main-anchor {
     
+    text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -128,6 +130,7 @@ article {
     width: 1200px;
     margin-left: 40px;
     border: 3px solid lightseagreen;
+    color: #1c1c1c;
 }
 .horiseon-image {
     display: flex;
@@ -138,10 +141,14 @@ article {
     height: 100px;
     width: 500px;
 }
-#Work {
+/* #Work {
     display: flex;
     flex-direction: column;
-}
-#work section {
-    
-}
+} */
+ 
+/* Link Section */
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none;}
