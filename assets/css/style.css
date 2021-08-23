@@ -205,7 +205,7 @@ a:active { text-decoration: none;}
 
 
 /* Media Query for Mobile */
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 575px) {
 header {
     display: flex;
     flex-direction: column;
@@ -229,6 +229,14 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.secondary-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.secondary-images div {
+    margin-top: 25px;
 }
 .info {
     min-width: none;
