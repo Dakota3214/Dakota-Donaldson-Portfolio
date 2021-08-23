@@ -217,6 +217,7 @@ header h1 {
 }
 header nav ul {
     display: flex;
+    justify-content: center;
 }
 .hero content {
     display: flex;
@@ -235,9 +236,7 @@ article {
     flex-direction: column;
     align-items: flex-end;
 }
-.secondary-images div {
-    margin-top: 25px;
-}
+
 .info {
     min-width: none;
     max-width: none;
@@ -246,8 +245,12 @@ article {
     border-bottom: 3px solid #1c1c1c;
     border-right: 0;
 }
+
 #Work section {
     display: flex;
     flex-direction: column;
+}
+.work-images {
+    margin-top: 10px;
 }
 }
